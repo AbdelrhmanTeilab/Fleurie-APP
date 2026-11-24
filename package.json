@@ -1,0 +1,28 @@
+{
+  "name": "fleurie",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --bun next dev -p 3100",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:seed": "bun run scripts/seed.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.6.0",
+    "drizzle-orm": "^0.45.4",
+    "next": "15",
+    "postgres": "^4.1.1",
+    "react": "19",
+    "react-dom": "19",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^5.9"
+  }
+}
